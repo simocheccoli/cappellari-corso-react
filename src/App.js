@@ -1,0 +1,40 @@
+import logo from './logo.svg';
+import './App.css';
+import Student from "./Student";
+
+function App() {
+
+    const navbar = <div className="container">
+        <h1 className="site-heading">Hello, React</h1>
+    </div>
+
+    return (
+        <div className="App">
+            <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo"/>
+                <p>
+                    Edit <code>src/App.js</code> and save to reload.
+                </p>
+                <a
+                    className="App-link"
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Learn React
+                </a>
+
+                <Student surname={'Rossi'} name={'Giulia'}/>
+                <Student surname={'Bianchi'} name={'Michele'}/>
+                <Student surname={'Verdi'} name={'Fabio'} voto1={6} voto2={6} voto3={0}/>
+                <Student name={'Fabio'} voto1={7} voto2={10} voto3={3}/>
+                <Student surname={'Verdi'}/>
+                <Student  />
+            </header>
+
+
+        </div>
+    );
+}
+
+export default App;
