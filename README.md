@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### come cambiare email e username nella repo git
+PS C:\Users\Pc110\cappellari-corso-react> git config user.email "E-mail"
+PS C:\Users\Pc110\cappellari-corso-react> git config user.name "User.name"  
