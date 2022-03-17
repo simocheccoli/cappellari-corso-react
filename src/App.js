@@ -25,7 +25,7 @@ function App() {
                 </a>
 
             
-                <Student name={'Irene'} surname={'DAngelo'} media={'(voto1,voto2,voto3)/3'} />
+                <Student name={'Irene'} surname={'DAngelo'} media={''} />
             </header>
 
 

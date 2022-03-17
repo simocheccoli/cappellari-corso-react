@@ -26,7 +26,7 @@ class Student extends Component {
             voto1: 7,
             voto2: 6,
             voto3: 8
-        };
+        } = this.props.voti
 
         //interfaccia
         return (
