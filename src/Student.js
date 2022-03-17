@@ -5,7 +5,7 @@ import React, {Component} from 'react'
 class Student extends Component {
     render() {
 
-        console.log(this.props)
+        // console.log(this.props)
         //proprietà
         /*
         const {
@@ -17,26 +17,27 @@ class Student extends Component {
 */
         const name = this.props.name;
         const surname = this.props.surname;
-        const voto1 = this.props.voto1;
-        const voto2 = this.props.voto2;
-        const voto3 = this.props.voto3;
-
+        // const voto1 = this.props.voto1;
+        // const voto2 = this.props.voto2;
+        // const voto3 = this.props.voto3;
+        // const voti = this.props.voti;
 
         //interfaccia
         return (
             <div>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
-                <p>Media : {this.calcola_media()}</p>
+                <p>Media : {this.calcolaMedia()}</p>
             </div>
         )
     }
 
-    calcola_media(){
-        let media = (this.props.voto1 + this.props.voto2 + this.props.voto3)/3;
+    calcolaMedia() {
+        const voti = this.props.voti;
+        const sommaVoti = voti.reduce((prevValue, curValue) => prevValue + curValue);
+        let media = sommaVoti / voti.length;
 
         return media;
-
     }
 }
 
