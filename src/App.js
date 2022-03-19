@@ -12,17 +12,11 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
+                <h1>Titolo pagina</h1>
                 <p>
                     il mio primo progetto react
                 </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
+               
 
                 <Student name={'Beatrice'} surname={'djoum'} voto1={7} voto2={10} voto3={3}/>
                 
