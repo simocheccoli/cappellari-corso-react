@@ -25,9 +25,9 @@ class Student extends Component {
         //interfaccia
         return (
             <div>
-                <p>Nome : {name}</p>
-                <p>Cognome : {surname}</p>
-                <p>Media : {this.calcola_media()}</p>
+                <p><b>Nome :</b> {name}</p>
+                <p><b>Cognome : </b>{surname}</p>
+                <p><b>Media :</b> {this.calcola_media()}</p>
             </div>
         )
     }

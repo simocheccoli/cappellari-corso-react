@@ -12,9 +12,10 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
-                <h1>Titolo pagina</h1>
+                <h1> <u>Titolo pagina</u></h1>
+
                 <p>
-                    il mio primo progetto react
+                    Il mio primo <b>progetto react</b>
                 </p>
                
 
