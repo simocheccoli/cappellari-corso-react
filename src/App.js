@@ -18,7 +18,7 @@ function App() {
                 </p>
                
 
-                <Student name={'Beatrice'} surname={'djoum'} voto1={7} voto2={10} voto3={3}/>
+                <Student name={'Beatrice'} surname={'Djoum'} voto1={7} voto2={10} voto3={3}/>
                 
             </header>
 
