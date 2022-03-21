@@ -1,7 +1,6 @@
-//uso di librerie esterne
 import React, {Component} from 'react'
 
-//definizione del componente
+
 class Student extends Component {
     render() {
 
@@ -17,34 +16,35 @@ class Student extends Component {
 */
         const name = this.props.name;
         const surname = this.props.surname;
+        const voti = this.props.voti;
         /*const voto1 = this.props.voto1;
         const voto2 = this.props.voto2;
         const voto3 = this.props.voto3;*/
 
-        voti = new Array();
-        const voti = {
-            voto1: 7,
-            voto2: 6,
-            voto3: 8
-        } = this.props.voti
+        voti = [
+           {
+               voto1: 7,
+               voto2: 8,    
+               voto3: 7,
+           },
+       ]
 
         //interfaccia
         return (
             <div>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
-                <p>Media : {this.calcola_media()}</p>
+                <p>Media : {voti}</p>
             </div>
         )
     }
 
-    calcola_media(){
-        let media = (voto1+voto2+voto3)/3;
+  /*  calcola_media(){
+        let media = (voto1+voto2+voto3)/3; //non definiti
 
         return media;
 
-    }
+    }*/
 }
 
-//esportazione del componente (o di sole sue parti ..)
 export default Student
