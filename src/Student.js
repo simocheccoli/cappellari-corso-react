@@ -16,18 +16,19 @@ class Student extends Component {
 */
         const name = this.props.name;
         const surname = this.props.surname;
-        const voti = this.props.voti;
+       const voti = this.props.voti;
+
         /*const voto1 = this.props.voto1;
         const voto2 = this.props.voto2;
         const voto3 = this.props.voto3;*/
 
-        voti = [
+        /*voti = [
            {
                voto1: 7,
                voto2: 8,    
                voto3: 7,
            },
-       ]
+       ]*/
 
         //interfaccia
         return (
@@ -37,6 +38,11 @@ class Student extends Component {
                 <p>Media : {voti}</p>
             </div>
         )
+    }
+
+    calcolaMedia(){
+        let voti = ('voti[0] += voti[1] += voti[2]') /3;
+        return voti;
     }
 
   /*  calcola_media(){

@@ -25,10 +25,9 @@ function App() {
                 </a>
 
             
-                <Student name={'Irene'} surname={'Dangelo'} media={this.props.voti} />
-            </header>
+        <Student name={'Irene'} surname={'Dangelo'} voti={['5, 7, 6']} />
 
-
+</header>
         </div>
     );
 }
