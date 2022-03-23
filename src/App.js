@@ -24,7 +24,7 @@ function App() {
                     Learn React
                 </a>
 
-                <Student surname={'Mucci'} name={'Martina'} voto1={8} voto2={7} voto3={6}/>
+                <Student surname={'Mucci'} name={'Martina'} voti={[8,7,6]}/>
             </header>
 
 

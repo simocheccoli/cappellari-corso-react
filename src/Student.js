@@ -6,20 +6,14 @@ class Student extends Component {
     render() {
 
         console.log(this.props)
-        //proprietà
-        /*
-        const {
-            name,
-            surname,
-            age,
-            experienceLists,
-        } = this.props
-*/
+
         const name = this.props.name;
         const surname = this.props.surname;
+        /*
         const voto1 = this.props.voto1;
         const voto2 = this.props.voto2;
         const voto3 = this.props.voto3;
+        */
 
 
         //interfaccia
@@ -32,9 +26,24 @@ class Student extends Component {
         )
     }
 
-    calcola_media(){
-        let media = (this.props.voto1 + this.props.voto2 + this.props.voto3)/3;
 
+    /*
+    const array1 = [1, 2, 3, 4];
+
+    // 1 + 2 + 3 + 4
+
+        const sum = array1.reduce(
+            (previousValue, currentValue) => previousValue + currentValue
+        );
+
+        console.log(sum);
+    */
+
+    calcola_media(){
+        const voti = this.props.voti;
+        const sommaVoti = voti.reduce((previousValue, currentValue) => previousValue + currentValue);
+
+        let media = sommaVoti / voti.length;
         return media;
 
     }
