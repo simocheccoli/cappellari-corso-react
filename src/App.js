@@ -25,7 +25,7 @@ function App() {
                 </a>
 
             
-        <Student name={'Irene'} surname={'Dangelo'} voti={['5, 7, 6']} />
+        <Student name={'Irene'} surname={'Dangelo'} voti={[5, 7, 6]} />
 
 </header>
         </div>
