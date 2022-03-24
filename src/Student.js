@@ -41,7 +41,7 @@ class Student extends Component {
     }
 
     calcolaMedia(){
-        let voti = ('voti[0] += voti[1] += voti[2]') /3;
+        let voti = (voti[0] += voti[1] += voti[2])/3;
         return voti;
     }
 
