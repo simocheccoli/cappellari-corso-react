@@ -24,10 +24,12 @@ function App() {
                     Learn React
                 </a>
 
-            
-        <Student name={'Irene'} surname={'Dangelo'} voti={[5, 7, 6]} />
 
-</header>
+                <Student name={'Irene'} surname={'Dangelo'} voti={[5, 7, 6 , 9 , 10 , 4]}/>
+                <Student name={'Mario'} surname={'Rossi'} voti={[]}/>
+                <Student name={'Fabio'} surname={'Verdi'}/>
+
+            </header>
         </div>
     );
 }

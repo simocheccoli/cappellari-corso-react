@@ -4,8 +4,8 @@ import React, {Component} from 'react'
 class Student extends Component {
     render() {
 
-        console.log(this.props)
-     
+        console.log(this.props, 'Render')
+
         //interfaccia
         return (
             <div>
@@ -16,17 +16,25 @@ class Student extends Component {
         )
     }
 
-    calcolaMedia(){
-        console.log(this.props.voti);
-        this.altroMetodo();
-        let voti = (voti[0] += voti[1] += voti[2])/3;
-        return voti;
+    calcolaMedia() {
+
+
+        if (this.props.voti && this.props.voti.length > 0) {
+
+let sommavoti=0;
+            for (let i = 0; i < this.props.voti.length; i++) {
+                sommavoti+=this.props.voti[i];
+            }
+
+            return  sommavoti/this.props.voti.length;
+
+        }
+        return ' - ';
+
     }
 
 
-    altroMetodo(){
-        
-    }
+
 }
 
 export default Student
