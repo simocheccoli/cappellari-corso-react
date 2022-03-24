@@ -5,24 +5,27 @@ class Student extends Component {
     render() {
 
         console.log(this.props)
-        //proprietà
-        const name = this.props.name;
-        const surname = this.props.surname;
-        const voti = this.props.voti;
-
+     
         //interfaccia
         return (
             <div>
-                <p>Nome : {name}</p>
-                <p>Cognome : {surname}</p>
+                <p>Nome : {this.props.name}</p>
+                <p>Cognome : {this.props.surname}</p>
                 <p>Media : {this.calcolaMedia()}</p>
             </div>
         )
     }
 
     calcolaMedia(){
+        console.log(this.props.voti);
+        this.altroMetodo();
         let voti = (voti[0] += voti[1] += voti[2])/3;
         return voti;
+    }
+
+
+    altroMetodo(){
+        
     }
 }
 
