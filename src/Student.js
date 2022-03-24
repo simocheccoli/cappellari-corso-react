@@ -15,7 +15,7 @@ class Student extends Component {
             <div>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
-                <p>Media : {voti}</p>
+                <p>Media : {this.calcolaMedia()}</p>
             </div>
         )
     }
