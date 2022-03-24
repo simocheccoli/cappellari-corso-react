@@ -7,25 +7,29 @@ class Student extends Component {
     const name = this.props.name;
     const surname = this.props.surname;
 
-    const voto1 = this.props.voto1;
-    const voto2 = this.props.voto2;
-    const voto3 = this.props.voto3;   
 
-    const voti_alunno = [{
+    const voti_alunno = this.props.voti_alunno;
 
-    }] = this.props.voti_alunno;
-
+    console.log(voti_alunno)
         return (
             <div>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
                 <p>Voti : {voti_alunno}</p>
+                <p>Media : {this.media_alunno}</p>
             </div>
         )
+    }
+
+    media_alunno(voti_alunno) {
+        let media = (voti_alunno[0]) + (voti_alunno[1]) + (voti_alunno[2])/3;
+        console.log(voti_alunno);
+        return media;
+
     }
 }
 
 
-
 //esportazione del componente (o di sole sue parti ..)
+
 export default Student
