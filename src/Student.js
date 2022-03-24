@@ -3,7 +3,6 @@ import React, {Component} from 'react'
 
 class Student extends Component {
     render() {
-
         console.log(this.props)
         //proprietà
         /*
@@ -14,34 +13,26 @@ class Student extends Component {
             experienceLists,
         } = this.props
 */
-        const name = this.props.name;
-        const surname = this.props.surname;
-       const voti = this.props.voti;
+        name = this.props.name;
+        surname = this.props.surname;
+        voti = this.props.voti;
 
         /*const voto1 = this.props.voto1;
         const voto2 = this.props.voto2;
         const voto3 = this.props.voto3;*/
-
-        /*voti = [
-           {
-               voto1: 7,
-               voto2: 8,    
-               voto3: 7,
-           },
-       ]*/
 
         //interfaccia
         return (
             <div>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
-                <p>Media : {voti}</p>
+                <p>Media : {this.calcolaMedia()}</p> 
             </div>
         )
     }
 
     calcolaMedia(){
-        let voti = ('voti[0] += voti[1] += voti[2]') /3;
+        let voti = (voti[0] += voti[1] += voti[2])/3; //senza apici () perchè sennò è una stringa
         return voti;
     }
 
