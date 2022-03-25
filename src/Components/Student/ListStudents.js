@@ -11,8 +11,8 @@ class ListStudents extends Component {
                 <nav>
                     {students.map((student) => (
                         <Link
-                            style={{ display: "block", margin: "1rem 0" }}
-                            to={`/students/${student.id}`}
+                            style={{display: "block", margin: "1rem 0"}}
+                            to={`/student/${student.id}`}
                             key={student.id}
                         >
                             {student.name}

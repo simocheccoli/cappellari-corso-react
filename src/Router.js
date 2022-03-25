@@ -12,8 +12,9 @@ class Router extends Component {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="about" element={<About/>}/>
-                <Route path="students" element={<ListStudents/>}>
-                    <Route path=":studentId" element={<Student/>}/>
+                <Route path="students" element={<ListStudents/>}/>
+                <Route path="student" element={<Student/>}>
+                    <Route path=":studentId"/>
                 </Route>
                 <Route
                     path="*"
