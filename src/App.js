@@ -1,14 +1,13 @@
 import './App.css';
-import Student from "./Components/Student/Student.js";
+import Navbar from "./Components/Navbar/Navbar.js";
+import React from "react";
+import Router from "./Router";
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-
-            </header>
-
-
+            <Navbar/>
+            <Router/>
         </div>
     );
 }
