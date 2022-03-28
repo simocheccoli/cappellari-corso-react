@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.container{
+  width: 18rem!important;
+  margin-top: 20px;
+}
+.card-img-top{
+  margin: 10px 0;
+}

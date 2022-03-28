@@ -1,32 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
-import Student from "./Student";
+import React from "react";
+import {Routes, Route} from "react-router-dom";
+import Home from "./components/Home";
+import Navbar from "./components/nav/Navbar";
+import Student from "./components/students/Student";
+import Students from "./components/students/Students";
+
+import './css/App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 function App() {
 
-    const navbar = <div className="container">
-        <h1 className="site-heading">Hello, React</h1>
-    </div>
 
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
 
-                <Student surname={'Mucci'} name={'Martina'} voti={[8,7,6]}/>
-            </header>
+            <Navbar/>
 
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="studenti" element={<Students/>}/>
+                <Route path="studente" element={<Student />}>
+                    <Route path=":id" element={<Student/>}/>
+                </Route>
+                <Route
+                    path="*"
+                    element={
+                        <main style={{ padding: "1rem" }}>
+                            <p>There's nothing here!</p>
+                        </main>
+                    }
+                />
+            </Routes>
+
+
+                {/*<Student surname={'Mucci'} name={'Martina'} voti={[]}/>*/}
 
         </div>
     );
