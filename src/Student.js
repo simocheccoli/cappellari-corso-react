@@ -1,32 +1,19 @@
 import React, {Component} from 'react';
-import {Routes, Route, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 class Student extends Component {
     render() {
         //proprietà
-        /*
-        const {
-            name,
-            surname,
-            age,
-            experienceLists,
-        } = this.props
-*/
         const name = this.props.name;
         const surname = this.props.surname;
-        const voti = this.props.voti;
-
-        /*const voto1 = this.props.voto1;
-        const voto2 = this.props.voto2;
-        const voto3 = this.props.voto3;*/
 
         //interfaccia
         return (
             <div className={this.props.gender}>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
-                <p> Media : { this.calcolaMedia() }</p>
+                <p>Media : {this.calcolaMedia()}</p>
                 <Link to="/about">About</Link>
             </div>
         )
@@ -45,8 +32,6 @@ class Student extends Component {
 
 
 }
-
-
 
 
 export default Student

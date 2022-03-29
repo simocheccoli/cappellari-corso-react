@@ -1,4 +1,4 @@
-export default [
+const elencoStudenti = [
     {
         name: "Simone",
         surname: "Checcoli",
@@ -51,3 +51,5 @@ export default [
 
 
 ];
+
+export default elencoStudenti;
