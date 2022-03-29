@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Student from "./Student";
+import { Routes, Route, Link } from "react-router-dom";
+import About from './Components/About/About.js';
 
 function App() {
 
@@ -8,24 +10,22 @@ function App() {
         <h1 className="site-heading">Hello, React</h1>
     </div>
 
+    
+
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-
             
-        <Student name={'Irene'} surname={'Dangelo'} voti={[5, 7, 6]} /> 
+                <h1>Welcome to React Router!</h1>
+      <Routes>
+       
+        <Route path="Irene" element={<Student name={'Irene'} gender={'f'} />} />
+        <Route path="Fabio" element={<Student name={'Fabio'} gender={'m'}/>} />
+        <Route path="about" element={<About />} />
+      </Routes>
+
+      <Link to="Fabio">Fabio</Link>
+      <Link to="Irene">Irene</Link>
 
 </header>
         </div> 
