@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+import {Routes, Route, Link} from "react-router-dom";
 
 
 class Student extends Component {
@@ -25,7 +25,6 @@ class Student extends Component {
         //interfaccia
         return (
             <div className={this.props.gender}>
-
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
                 <Link to="/about">About</Link>
