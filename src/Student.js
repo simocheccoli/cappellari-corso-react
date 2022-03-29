@@ -8,9 +8,8 @@ class Student extends Component {
     const surname = this.props.surname;
 
 
-    const voti_alunno = this.props.voti_alunno;
 
-    console.log(voti_alunno)
+    console.log(this.props)
         return (
             <div>
                 <p>Nome : {name}</p>
@@ -21,9 +20,9 @@ class Student extends Component {
         )
     }
 
-    media_alunno(voti_alunno) {
-        let media = (voti_alunno[0]) + (voti_alunno[1]) + (voti_alunno[2])/3;
-        console.log(voti_alunno);
+    calcolaMedia () {
+
+        console.log(this.voti_alunno)
         return media;
 
     }
