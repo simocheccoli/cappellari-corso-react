@@ -12,6 +12,23 @@ function App() {
 
 
     /**
+     *  Proprietà di uno Studente
+     *
+     *  name,surname, gender , voti
+     *
+     */
+
+    let studenti = [
+        {
+            name: "Irene",
+            surname: "D'angelo",
+            gender: 'f',
+            voti: [7, 5, 8]
+        },
+
+    ];
+
+    /**
      *
      * <Link to="URL_DI_DESTINAZIONE" target="_blank" > Mostrato in pagina </Link> -> <a href="URL_DI_DESTINAZIONE" target="_blank"> Mostrato in pagina  </a>
      */
