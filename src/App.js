@@ -15,16 +15,17 @@ function App() {
                 <p>
                     Edit <code>src/App.js</code> and save to reload.
                 </p>
-                <a
+                <anpm 
                     className="App-link"
                     href="https://reactjs.org"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     Learn React
-                </a>
+                </anpm>
 
-                <Student surname={'Lorenzo'} name={'Micai'}/>
+                <Student name={'Lorenzo'} surname={'Micai'} voti={[6, 7, 5]}/>
+                <Student name={'Mario'} surname={'Bongiovanni'} voti={[]}/>
             
             </header>
 

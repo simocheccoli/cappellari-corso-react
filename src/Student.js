@@ -17,9 +17,8 @@ class Student extends Component {
 */
         const name = this.props.name;
         const surname = this.props.surname;
-        const voto1 = this.props.voto1;
-        const voto2 = this.props.voto2;
-        const voto3 = this.props.voto3;
+        const voti = this.props.voti;
+        
 
 
         //interfaccia
@@ -33,9 +32,25 @@ class Student extends Component {
     }
 
     calcola_media(){
-        let media = (this.props.voto1 + this.props.voto2 + this.props.voto3)/3;
+       
+       console.log(this.props.voti, 'calcola_media')
+       console.log(this.props.voti.lenght, 'lenght voti')
 
-        return media;
+       if(this.props.voti && this.props.voti.length > 0){
+       
+        let sommavoti=0;
+
+
+        for(let i=0; i<this.props.voti.length ; i++) {
+            sommavoti+=this.props.voti[i];
+        }
+        return sommavoti/this.props.voti.length;
+        
+           
+
+       }
+
+        return '-';
 
     }
 }
