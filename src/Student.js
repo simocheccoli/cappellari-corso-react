@@ -1,5 +1,6 @@
 //uso di librerie esterne
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 
 //definizione del componente
 class Student extends Component {
