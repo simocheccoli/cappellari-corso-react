@@ -26,7 +26,29 @@ const data = [
         
     ],
 
-    
+    Skills = [{type:''}],
+
+    Software = [{type:''}],
+
+    Reference = [
+        {
+            name: '',
+            surname: '',
+            number: '',
+            email:''
+        }
+    ],
+
+    Experience = [
+        {
+            from:'',
+            to:'',
+            job:'',
+            company:'',
+            description:''
+        }
+    ]
+
 
 
 
