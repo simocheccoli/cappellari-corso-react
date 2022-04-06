@@ -1,15 +1,33 @@
 const data = [
-    componentA = {
+    Contacts = {
         address: 'via xxx',
         tel: 0000000000,
         mail: 'info@info.it'
     },
-    componentB = {
+    User = {
         name: 'nome',
         surname: 'cognome',
         job: 'dev'
     },
-    componentC = {
+    Photo = {
         //img
-    }
+    },
+    About = { description:''
+        
+    },
+
+    Education = [
+        {
+            from: '',
+            to: '',
+            institute: '',
+            title: ''
+        }
+        
+    ],
+
+    
+
+
+
 ]
