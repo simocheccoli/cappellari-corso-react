@@ -1,34 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
 import Student from "./Student";
+import studenti from "./elencoStudenti.js"
+import {Routes, Route, Link} from "react-router-dom";
+
 
 function App() {
 
     const navbar = <div className="container">
-        <h1 className="site-heading">Hello, React</h1>
+        <h1 className="site-heading">Welcome to React Router!</h1>
     </div>
 
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
 
-                <Student surname={'Mezzogori'} name={'Fabio'} voti={[6,9,8,9,8]}/>
+                {navbar}
+
+                <Routes>
+                    {
+                        studenti.map((item, index) => {
+                            return <Route exact
+                                          key={index}
+                                          path={item.name}
+                                          element={
+                                              <Student name={item.name}
+                                                       surname={item.surname}
+                                                       voti={item.voti}/>
+                                          }
+                            />
+                        })
+                    }
+                </Routes>
+
+                <h2>Elenco studenti</h2>
+
+                {
+                    studenti.map((item, index) => {
+                        return <Link to={item.name}>{item.name}</Link>
+                    })
+                }
 
             </header>
-
-
         </div>
     );
 }
