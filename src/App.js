@@ -26,6 +26,7 @@ function App() {
                                               <Student name={item.name}
                                                        surname={item.surname}
                                                        voti={item.voti}/>
+            
                                           }
                             />
                         })

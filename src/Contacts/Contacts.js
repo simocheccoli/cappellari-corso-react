@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import data from './data/Contacts.js'
+import data from '../Data/jsonExample.js'
 
 class Contacts extends Component{
 
@@ -11,6 +11,9 @@ render(){
 
 
 return 1
+    
+
+
 
 }
 

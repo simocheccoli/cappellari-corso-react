@@ -1,6 +1,7 @@
 //uso di librerie esterne
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
+import Contacts from "./Contacts/Contacts.js"
 
 //definizione del componente
 class Student extends Component {
