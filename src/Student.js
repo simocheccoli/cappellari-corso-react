@@ -1,34 +1,48 @@
 //uso di librerie esterne
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import {Link} from "react-router-dom";
+import Contacts from "./Contacts/Contacts.js"
 
 //definizione del componente
 class Student extends Component {
     render() {
-    const name = this.props.name;
-    const surname = this.props.surname;
 
+        console.log(this.props)
+        //proprietà
+        /*
+        const {
+            name,
+            surname,
+            age,
+            experienceLists,
+        } = this.props
+*/
+        const name = this.props.name;
+        const surname = this.props.surname;
+        let voti = this.props.voti;
 
-
-    console.log(this.props)
+        //interfaccia
         return (
             <div>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
-                <p>Voti : {voti_alunno}</p>
-                <p>Media : {this.media_alunno}</p>
+                <p>Media : {this.calcola_media()}</p>
             </div>
         )
     }
 
-    calcolaMedia () {
+    calcola_media(){
+        let media = 0;
+        let voti = this.props.voti;
+        for(let i=0; i < voti.length; i++){
+            (media += voti[i])
+        };
+        media /= voti.length;
 
-        console.log(this.voti_alunno)
-        return media;
+        return media
 
     }
 }
 
-
 //esportazione del componente (o di sole sue parti ..)
-
 export default Student
