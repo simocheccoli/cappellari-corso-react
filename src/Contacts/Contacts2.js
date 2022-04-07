@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import data from '../Data/data.json'
 
-class Contacts extends Component{
+function Contacts(){
 
-render(){
+
     const address = data.Contacts.address;
     const number = data.Contacts.number;
     const mail = data.Contacts.mail;
@@ -22,7 +22,7 @@ return (
 
 
 
-}
+
 
 
 }
