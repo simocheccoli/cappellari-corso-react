@@ -4,6 +4,7 @@ import studenti from "./elencoStudenti.js"
 import Data from "./elencoStudenti.json"
 import {Routes, Route, Link} from "react-router-dom";
 import Contacts from './Contacts/Contacts.js';
+import Contacts2 from './Contacts/Contacts2.js';
 
 function App() {
 
@@ -24,12 +25,17 @@ function App() {
                                           key={index}
                                           path={item.name}
                                           element={
+
+                                            <>
                                               <Student name={item.name}
                                                        surname={item.surname}
                                                        voti={item.voti}  />
+                                           
+
+                                                <Contacts/>  </> 
                                             
                                           }
-                                          
+        
                             />
 
 
@@ -37,8 +43,6 @@ function App() {
                     }
                 </Routes>
 
-                <h2>Curriculum di {}</h2>
-                <Contacts/>
 
                 <h2>Elenco studenti</h2>
                
