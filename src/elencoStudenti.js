@@ -20,7 +20,7 @@ const elencoStudenti = [
         surname: "",
         gender: 'm',
         voti: [
-            7, 5, 8
+            9, 9, 9
         ]
     },
     {
