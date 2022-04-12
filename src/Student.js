@@ -1,37 +1,47 @@
+//uso di librerie esterne
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 
-
+//definizione del componente
 class Student extends Component {
     render() {
+
+        console.log(this.props)
         //proprietà
+        /*
+        const {
+            name,
+            surname,
+            age,
+            experienceLists,
+        } = this.props
+*/
         const name = this.props.name;
         const surname = this.props.surname;
+        let voti = this.props.voti;
 
         //interfaccia
         return (
-            <div className={this.props.gender}>
+            <div>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
-                <p>Media : {this.calcolaMedia()}</p>
-                <Link to="/about">About</Link>
+                <p>Media : {this.calcola_media()}</p>
             </div>
         )
     }
 
-    calcolaMedia() {
-        let sommaVoti = 0;
-        if (this.props.voti && this.props.voti.length > 0) { //se mettessi solo la seconda condizione mi darebbe errore.  *vedi appunti
-            for (let i = 0; i < this.props.voti.length; i++) { //i è l'indice di ognielemento dell'array
-                sommaVoti += this.props.voti[i]; //così abbiamo ciclato i voti
-            }
-            return sommaVoti / this.props.voti.length;
-        }
-        return ' - ';
+    calcola_media(){
+        let media = 0;
+        let voti = this.props.voti;
+        for(let i=0; i < voti.length; i++){
+            (media += voti[i])
+        };
+        media /= voti.length;
+
+        return media
+
     }
-
-
 }
 
-
+//esportazione del componente (o di sole sue parti ..)
 export default Student
