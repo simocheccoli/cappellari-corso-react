@@ -1,7 +1,6 @@
 import './App.css';
 import Student from "./Student";
 import studenti from "./elencoStudenti.js"
-import Data from "./elencoStudenti.json"
 import {Routes, Route, Link} from "react-router-dom";
 import Contacts from './Contacts/Contacts.js';
 
@@ -22,11 +21,11 @@ function App() {
                         studenti.map((item, index) => {
                             return <Route exact
                                           key={index}
-                                          path={item.name}
+                                          path={item.User.name}
                                           element={
-                                              <Student name={item.name}
-                                                       surname={item.surname}
-                                                       voti={item.voti}  />
+                                              <Student name={item.User.name}
+                                                       surname={item.User.surname}
+                                              />
                                             
                                           }
                                           
@@ -45,7 +44,7 @@ function App() {
                     
                 {
                     studenti.map((item, index) => {
-                        return <Link to={item.name}>{item.name}</Link>
+                        return <Link to={item.User.name}>{item.User.name}</Link>
                             
 
                         

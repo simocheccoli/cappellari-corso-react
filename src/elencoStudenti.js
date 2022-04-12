@@ -1,55 +1,109 @@
 const elencoStudenti = [
-    {
-        name: "Simone",
-        surname: "Checcoli",
-        gender: 'm',
-        voti: [7, 5, 8],
+  {
+    "Contacts": {
+      "address": "via xxx",
+      "tel": "0000000000",
+      "mail": "info@info.it"
     },
+    "User": {
+      "name": "Simone",
+      "surname": "Checcoli",
+      "job": "dev"
+    },
+    "Photo": {
+    },
+    "About": {
+      "description": ""
+    },
+    "Education": [
+      {
+        "from": "",
+        "to": "",
+        "institute": "",
+        "title": ""
+      }
+    ],
+    "Skills": [
+      {
+        "type": ""
+      }
+    ],
+    "Software": [
+      {
+        "type": ""
+      }
+    ],
+    "Reference": [
+      {
+        "name": "",
+        "surname": "",
+        "number": "",
+        "email": ""
+      }
+    ],
+    "Experience": [
+      {
+        "from": "",
+        "to": "",
+        "job": "",
+        "company": "",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "Contacts": {
+      "address": "via xxx",
+      "tel": "0000000000",
+      "mail": "info@info.it"
+    },
+    "User": {
+      "name": "Irene",
+      "surname": "D'Angelo",
+      "job": "dev"
+    },
+    "Photo": {
+    },
+    "About": {
+      "description": ""
+    },
+    "Education": [
+      {
+        "from": "",
+        "to": "",
+        "institute": "",
+        "title": ""
+      }
+    ],
+    "Skills": [
+      {
+        "type": ""
+      }
+    ],
+    "Software": [
+      {
+        "type": ""
+      }
+    ],
+    "Reference": [
+      {
+        "name": "",
+        "surname": "",
+        "number": "",
+        "email": ""
+      }
+    ],
+    "Experience": [
+      {
+        "from": "",
+        "to": "",
+        "job": "",
+        "company": "",
+        "description": ""
+      }
+    ]
+  }
+]
 
-    {
-        name: "Irene",
-        surname: "D'angelo",
-        gender: 'f',
-        voti: [
-            7, 5, 8
-        ]
-    },
-
-    {
-        name: "Fabio",
-        surname: "",
-        gender: 'm',
-        voti: [
-            9, 9, 9
-        ]
-    },
-    {
-        name: "Nicola",
-        surname: "",
-        gender: 'm',
-        voti: [
-            7, 5, 8
-        ]
-    },
-
-    {
-        name: "Michele",
-        surname: "",
-        gender: 'm',
-        voti: [
-            7, 5, 8
-        ]
-    },
-    {
-        name: "Giulia",
-        surname: "",
-        gender: 'f',
-        voti: [
-            7, 5, 8
-        ]
-    },
-
-
-];
 
 export default elencoStudenti;
