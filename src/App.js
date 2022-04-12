@@ -27,12 +27,15 @@ function App() {
                                           element={
 
                                             <>
+                                            <h1>curriculum vitae di {item.name}</h1>
                                               <Student name={item.name}
                                                        surname={item.surname}
                                                        voti={item.voti}  />
-                                           
 
-                                                <Contacts/>  </> 
+                                                <Contacts />  
+                                                
+                                                
+                                                </> 
                                             
                                           }
         
