@@ -12,9 +12,7 @@ const elencoStudenti = [
     },
     "Photo": {
     },
-    "About": {
-      "description": ""
-    },
+    "Bio": "ciao",
     "Education": [
       {
         "from": "",
@@ -33,14 +31,7 @@ const elencoStudenti = [
         "type": ""
       }
     ],
-    "Reference": [
-      {
-        "name": "",
-        "surname": "",
-        "number": "",
-        "email": ""
-      }
-    ],
+    "Reference": "ciaociao",
     "Experience": [
       {
         "from": "",

@@ -1,6 +1,9 @@
 //uso di librerie esterne
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
+import Bio from './Components/About/Bio';
+import Reference from './Components/Reference/Reference';
+
 
 //definizione del componente
 class Student extends Component {
@@ -25,6 +28,8 @@ class Student extends Component {
             <div>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
+                <Bio description/>
+                <Reference description/>
             </div>
         )
     }
