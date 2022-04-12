@@ -8,7 +8,7 @@ const elencoStudenti = [
     "User": {
       "name": "Simone",
       "surname": "Checcoli",
-      "job": "dev"
+      "job": "dev"  
     },
     "Photo": {
     },
