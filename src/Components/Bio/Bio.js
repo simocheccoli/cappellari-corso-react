@@ -10,7 +10,7 @@ class Bio extends Component {
         return (
         <div>
             <h2>Biografia</h2>
-            <p>{this.props.description}</p>
+            <p>{description}</p>
         </div>
         );
     }

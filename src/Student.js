@@ -22,14 +22,14 @@ class Student extends Component {
         const name = this.props.name;
         const surname = this.props.surname;
         const description= this.props.description;
-        const bio = this.props.bio;
+        
 
         //interfaccia
         return (
             <div>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
-                <Bio bio = {description}/>
+                <Bio description = {description}/>
                
             </div>
         )
