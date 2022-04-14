@@ -25,6 +25,9 @@ function App() {
                                           element={
                                               <Student name={item.User.name}
                                                        surname={item.User.surname}
+                                                       adress={item.Contacts.address}
+                                                       tel={item.Contacts.tel}
+                                                       mail={item.Contacts.mail}
                                                        experiences={item.Experience}
                                                        education={item.Education}
                                                        skills={item.Skills}
@@ -41,8 +44,7 @@ function App() {
                 </Routes>
 
                 <h2>Curriculum di {}</h2>
-                <Contacts/>
-
+               
                 <h2>Elenco studenti</h2>
                
                     

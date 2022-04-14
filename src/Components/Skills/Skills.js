@@ -10,6 +10,7 @@ class Skills extends Component {
         console.log(this.props.skills);
         
       const skillsList = skills.map((item, index) =>{
+        
            return( <li>
                 <p>{item.type}</p>
                 </li>)
@@ -20,5 +21,4 @@ class Skills extends Component {
     }
 }
 
-//esportazione del componente (o di sole sue parti ..)
-export default Skills
+export default Skills;

@@ -33,7 +33,7 @@ const elencoStudenti = [
     ],
     "Software": [
       {
-        "type": "ssssssssss"
+        "type": "Github, Npm, "
       }
     ],
     "Reference": [

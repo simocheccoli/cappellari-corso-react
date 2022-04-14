@@ -9,6 +9,7 @@ class Software extends Component {
         
       const softwareList = software.map((item, index) =>{
            return( <li>
+                <h3>Software</h3>
                 <p>{item.type}</p>
                 </li>)
 

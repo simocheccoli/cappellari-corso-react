@@ -5,6 +5,7 @@ import Experiences from "./Components/Experiences";
 import Education from './Components/Education/Education';
 import Skills from './Components/Skills/Skills';
 import Software from './Components/Software/Software';
+import Contacts from './Contacts/Contacts';
 
 
 //definizione del componente
@@ -25,6 +26,7 @@ class Student extends Component {
             <div>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
+                <Contacts />
                 <Experiences experiences={experiences}/>
                 <Education education={education}/>
                 <Skills skills={skills}/>
