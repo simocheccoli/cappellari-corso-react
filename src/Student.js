@@ -1,6 +1,4 @@
-//uso di librerie esterne
 import React, {Component} from 'react';
-import {Link} from "react-router-dom";
 import Experiences from "./Components/Experiences";
 import Education from './Components/Education/Education';
 import Skills from './Components/Skills/Skills';
@@ -8,7 +6,6 @@ import Software from './Components/Software/Software';
 import Contacts from './Contacts/Contacts';
 
 
-//definizione del componente
 class Student extends Component {
     render() {
 
@@ -36,5 +33,5 @@ class Student extends Component {
     }
 }
 
-//esportazione del componente (o di sole sue parti ..)
-export default Student
+
+export default Student;

@@ -9,9 +9,9 @@ class Skills extends Component {
         const skills = this.props.skills;
         console.log(this.props.skills);
         
-      const skillsList = skills.map((item, index) =>{
-        
-           return( <li>
+      const skillsList = skills.map((item, index) =>{     
+           return( 
+           <li key={index}>
                 <p>{item.type}</p>
                 </li>)
 

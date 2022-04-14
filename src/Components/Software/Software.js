@@ -8,7 +8,7 @@ class Software extends Component {
         console.log(this.props.software);
         
       const softwareList = software.map((item, index) =>{
-           return( <li>
+           return( <li key={index}>
                 <h3>Software</h3>
                 <p>{item.type}</p>
                 </li>)
