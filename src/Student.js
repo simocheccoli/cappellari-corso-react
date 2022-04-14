@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import Experiences from "./Components/Experiences";
 import Education from './Components/Education/Education';
 import Skills from './Components/Skills/Skills';
+import Software from './Components/Software/Software';
 
 
 //definizione del componente
@@ -16,6 +17,8 @@ class Student extends Component {
         const experiences = this.props.experiences;
         const education = this.props.education;
         const skills = this.props.skills;
+        const software = this.props.software;
+
         console.log(experiences);
         //interfaccia
         return (
@@ -25,6 +28,7 @@ class Student extends Component {
                 <Experiences experiences={experiences}/>
                 <Education education={education}/>
                 <Skills skills={skills}/>
+                <Software software={software}/>
             </div>
         )
     }

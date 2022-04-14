@@ -28,6 +28,7 @@ function App() {
                                                        experiences={item.Experience}
                                                        education={item.Education}
                                                        skills={item.Skills}
+                                                       software={item.Software}
                                               />
                                             
                                           }
