@@ -8,13 +8,12 @@ const elencoStudenti = [
     "User": {
       "name": "Simone",
       "surname": "Checcoli",
-      "job": "dev"
+      "job": "dev"  
     },
     "Photo": {
     },
-    "About": {
-      "description": ""
-    },
+    "Bio": {
+      "description" : "ciao zio"},
     "Education": [
       {
         "dateFrom": "2016",
@@ -33,14 +32,9 @@ const elencoStudenti = [
         "type": ""
       }
     ],
-    "Reference": [
-      {
-        "name": "",
-        "surname": "",
-        "number": "",
-        "email": ""
-      }
-    ],
+    "Reference": {
+      "descriptionR" : "ciaociao"
+    },
     "Experience": [
       {
         "dateFrom": "2019",
@@ -72,9 +66,8 @@ const elencoStudenti = [
     },
     "Photo": {
     },
-    "About": {
-      "description": ""
-    },
+    "Bio": {
+      "description": "Oleeeee"},
     "Education": [
       {
         "dateFrom": "2016",
@@ -93,14 +86,10 @@ const elencoStudenti = [
         "type": ""
       }
     ],
-    "Reference": [
+    "Reference":
       {
-        "name": "",
-        "surname": "",
-        "number": "",
-        "email": ""
-      }
-    ],
+        "descriptionR" : "ciao ciao ciao"
+      },
     "Experience": [
       {
         "dateFrom": "2020",

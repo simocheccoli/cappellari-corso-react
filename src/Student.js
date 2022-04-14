@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import Experiences from "./Components/Experiences";
 import Education from './Components/Education/Education';
+import Bio from './Components/Bio/Bio';
+import Reference from './Components/Reference/Reference';
+
 
 //definizione del componente
 class Student extends Component {
@@ -14,6 +17,10 @@ class Student extends Component {
         const experiences = this.props.experiences;
         const education = this.props.education;
         console.log(experiences);
+        const description= this.props.description;
+        const descriptionR= this.props.descriptionR;
+        
+
         //interfaccia
         return (
             <div>
@@ -21,10 +28,13 @@ class Student extends Component {
                 <p>Cognome : {surname}</p>
                 <Experiences experiences={experiences}/>
                 <Education education={education}/>
+                <Bio description = {description}/>
+                <Reference descriptionR = {descriptionR}/>
+               
             </div>
         )
     }
 }
 
-//esportazione del componente (o di sole sue parti ..)
-export default Student
+
+export default Student;

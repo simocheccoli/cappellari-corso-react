@@ -25,8 +25,6 @@ function App() {
                                           element={
                                               <Student name={item.User.name}
                                                        surname={item.User.surname}
-                                                       experiences={item.Experience}
-                                                       education={item.Education}
                                                        description={item.Bio.description}
                                                        descriptionR={item.Reference.descriptionR}
                                                        
