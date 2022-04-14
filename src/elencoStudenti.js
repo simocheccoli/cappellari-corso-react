@@ -32,7 +32,9 @@ const elencoStudenti = [
         "type": ""
       }
     ],
-    "Reference": "ciaociao",
+    "Reference": {
+      "descriptionR" : "ciaociao"
+    },
     "Experience": [
       {
         "from": "",
@@ -76,15 +78,10 @@ const elencoStudenti = [
         "type": ""
       }
     ],
-    "Reference": [
+    "Reference":
       {
-        "name": "",
-        "surname": "",
-        "number": "",
-        "email": ""
-      }
-    ],
-    
+        "descriptionR" : "ciao ciao ciao"
+      },
     "Experience": [
       {
         "from": "",

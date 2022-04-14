@@ -26,6 +26,7 @@ function App() {
                                               <Student name={item.User.name}
                                                        surname={item.User.surname}
                                                        description={item.Bio.description}
+                                                       descriptionR={item.Reference.descriptionR}
                                                        
                                               />
                                             

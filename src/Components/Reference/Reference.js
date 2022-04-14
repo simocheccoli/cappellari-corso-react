@@ -4,12 +4,12 @@ import { Routes, Route, Link } from "react-router-dom";
 class Reference extends Component {
     render (){
 
-        const reference = this.props.reference;
+        const descriptionR = this.props.descriptionR;
 
         return (
         <div>
             <h2>Referenze</h2>
-            <p></p>
+            <p>{descriptionR}</p>
             </div>
         );
     }
