@@ -27,6 +27,7 @@ function App() {
                                                        surname={item.User.surname}
                                                        experiences={item.Experience}
                                                        education={item.Education}
+                                                       skills={item.Skills}
                                               />
                                             
                                           }

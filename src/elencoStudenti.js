@@ -25,7 +25,10 @@ const elencoStudenti = [
     ],
     "Skills": [
       {
-        "type": ""
+        "type": "organization"
+      },
+      {
+        "type": "leadership"
       }
     ],
     "Software": [
@@ -85,7 +88,10 @@ const elencoStudenti = [
     ],
     "Skills": [
       {
-        "type": ""
+        "type": "communication"
+      },
+      {
+        "type": "teamwork"
       }
     ],
     "Software": [
