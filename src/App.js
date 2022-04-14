@@ -2,7 +2,6 @@ import './App.css';
 import Student from "./Student";
 import studenti from "./elencoStudenti.js"
 import {Routes, Route, Link} from "react-router-dom";
-import Contacts from './Contacts/Contacts.js';
 
 function App() {
 
@@ -25,11 +24,15 @@ function App() {
                                           element={
                                               <Student name={item.User.name}
                                                        surname={item.User.surname}
+                                                       address={item.Contacts.address}
+                                                       tel={item.Contacts.tel}
+                                                       mail={item.Contacts.mail}
                                                        experiences={item.Experience}
                                                        education={item.Education}
                                                        description={item.Bio.description}
-                                                       descriptionR={item.Reference.descriptionR}
-                                                       
+                                                       descriptionR={item.Reference.descriptionR}                                                       
+                                                       skills={item.Skills}
+                                                       software={item.Software}
                                               />
                                             
                                             
@@ -43,8 +46,7 @@ function App() {
                 </Routes>
 
                 <h2>Curriculum di {}</h2>
-                <Contacts/>
-
+               
                 <h2>Elenco studenti</h2>
                
                     

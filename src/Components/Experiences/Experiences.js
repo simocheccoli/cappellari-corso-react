@@ -10,7 +10,7 @@ class Experiences extends Component {
         console.log(this.props.experiences);
         
       const experiencesList = experiences.map((item, index) =>{
-           return( <li>
+           return( <li key={index}>
                 <span>{item.dateFrom}/{item.dateTo}</span>
                 <p>{item.job}</p>
                 <p>{item.company}</p>
@@ -23,5 +23,4 @@ class Experiences extends Component {
     }
 }
 
-//esportazione del componente (o di sole sue parti ..)
-export default Experiences
+export default Experiences;

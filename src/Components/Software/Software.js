@@ -1,15 +1,22 @@
 import React, {Component} from 'react';
 
-class Software extends Component{
-    render(){
+
+class Software extends Component {
+    render() {
 
         const software = this.props.software;
-        const softwareList = software.map((item, index) =>{
-            <p>{item.}</p>
+        console.log(this.props.software);
+        
+      const softwareList = software.map((item, index) =>{
+           return( <li key={index}>
+                <h3>Software</h3>
+                <p>{item.type}</p>
+                </li>)
 
         })
-        return(<div><ul>{softwareList}</ul></div>)
-    }   
+        //interfaccia
+        return (<div><ul>{softwareList}</ul></div>)
+    }
 }
 
 export default Software;

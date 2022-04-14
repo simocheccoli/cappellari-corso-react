@@ -1,13 +1,13 @@
-//uso di librerie esterne
 import React, {Component} from 'react';
-import {Link} from "react-router-dom";
 import Experiences from "./Components/Experiences";
 import Education from './Components/Education/Education';
 import Bio from './Components/Bio/Bio';
 import Reference from './Components/Reference/Reference';
+import Skills from './Components/Skills/Skills';
+import Software from './Components/Software/Software';
+import Contacts from './Contacts/Contacts';
 
 
-//definizione del componente
 class Student extends Component {
     render() {
 
@@ -16,6 +16,9 @@ class Student extends Component {
         const surname = this.props.surname;
         const experiences = this.props.experiences;
         const education = this.props.education;
+        const skills = this.props.skills;
+        const software = this.props.software;
+
         console.log(experiences);
         const description= this.props.description;
         const descriptionR= this.props.descriptionR;
@@ -26,11 +29,13 @@ class Student extends Component {
             <div>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
+                <Contacts />
                 <Experiences experiences={experiences}/>
                 <Education education={education}/>
                 <Bio description = {description}/>
                 <Reference descriptionR = {descriptionR}/>
-               
+                <Skills skills={skills}/>
+                <Software software={software}/>
             </div>
         )
     }
