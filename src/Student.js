@@ -6,6 +6,7 @@ import Reference from './Components/Reference/Reference';
 import Skills from './Components/Skills/Skills';
 import Software from './Components/Software/Software';
 import Contacts from './Contacts/Contacts';
+import Photo from './Components/Photo/Photo.js';
 
 
 class Student extends Component {
@@ -22,11 +23,13 @@ class Student extends Component {
         console.log(experiences);
         const description= this.props.description;
         const descriptionR= this.props.descriptionR;
+        const url = this.props.url;
         
 
         //interfaccia
         return (
             <div>
+                <Photo url={url}/>
                 <p>Nome : {name}</p>
                 <p>Cognome : {surname}</p>
                 <Contacts />

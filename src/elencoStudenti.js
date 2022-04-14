@@ -11,6 +11,7 @@ const elencoStudenti = [
       "job": "dev"  
     },
     "Photo": {
+      "url" : "https://avatars.githubusercontent.com/u/8978038?v=4"
     },
     "Bio": {
       "description" : "ciao zio"},
@@ -68,6 +69,7 @@ const elencoStudenti = [
       "job": "dev"
     },
     "Photo": {
+      "url" : "https://avatars.githubusercontent.com/u/8978038?v=4"
     },
     "Bio": {
       "description": "Oleeeee"},
