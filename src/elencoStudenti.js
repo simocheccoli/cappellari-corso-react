@@ -12,7 +12,8 @@ const elencoStudenti = [
     },
     "Photo": {
     },
-    "Bio": "ciao zio",
+    "Bio": {
+      "description" : "ciao zio"},
     "Education": [
       {
         "from": "",
@@ -55,7 +56,8 @@ const elencoStudenti = [
     },
     "Photo": {
     },
-    "Bio": "oleeeeeeeee",
+    "Bio": {
+      "description": "Oleeeee"},
     "Education": [
       {
         "from": "",

@@ -25,7 +25,8 @@ function App() {
                                           element={
                                               <Student name={item.User.name}
                                                        surname={item.User.surname}
-                                                       description={item.Bio}
+                                                       bio={item.Bio.description}
+                                                       
                                               />
                                             
                                             
