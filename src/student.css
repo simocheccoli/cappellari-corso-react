@@ -2,7 +2,7 @@
     width:1340px;
     margin:auto;
     overflow:hidden;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Com;
 
 }
 
@@ -39,7 +39,7 @@ p{
     font-size: 18px;
     font-weight: normal;
     color: white;
-    text-transform: capitalize;
+    text-transform: initial;
     text-align: left;
     margin-left: 40px;
     margin-right: 30px;
@@ -52,7 +52,7 @@ p{
     font-weight: bold;
     margin-top:0;
     margin-bottom: 0;
-    
+
 }
 
 .mainEd{   
