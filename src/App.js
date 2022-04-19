@@ -74,7 +74,9 @@ function App() {
                                           key={index}
                                           path={item.User.name}
                                           element={
-                                              <Student name={item.User.name}
+                                              <Student 
+                                                       url={item.Photo.url}
+                                                       name={item.User.name}
                                                        surname={item.User.surname}
                                                        address={item.Contacts.address}
                                                        tel={item.Contacts.tel}
