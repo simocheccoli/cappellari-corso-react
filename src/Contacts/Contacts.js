@@ -12,7 +12,6 @@ render(){
 
 return (
     <div>
-        <h3>Contatti</h3>
         <p>{address}</p>
         <p>{tel}</p>
         <p>{mail}</p>
