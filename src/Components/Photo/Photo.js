@@ -9,7 +9,7 @@ class Photo extends Component {
         return(
            <div>
                <h2>Photo</h2>
-               <img src={url} alt="immagine" />
+               <img className="photo" src={url} alt="immagine" />
            </div>
         );
     }

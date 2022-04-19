@@ -17,7 +17,15 @@
     float:right;
 }
 
-#main #colonnaSX .photo {
-    width: 200px;
-    height: 200px;
+img{
+    width: 250px;
+    height: 300px;
 }
+
+h2, h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: #61DAf8;
+    text-transform: uppercase;
+}
+
