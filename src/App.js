@@ -66,7 +66,7 @@ class App extends Component {
                           key={index}
                           path={item.User.name}
                           element={
-                              <Student
+                              <Student 
                                   key={index}
                                   url={item.Photo.url}
                                   name={item.User.name}
@@ -89,8 +89,11 @@ class App extends Component {
         });
 
         const studentiLinks = this.state.studenti && this.state.studenti.length && this.state.studenti.map((item, index) => {
-            return <Link key={index} to={item.User.name}>{item.User.name}</Link>
-        });
+        return (<tr key={index}>
+                <td><Link to={item.User.name}>{item.User.name}</Link></td>
+                <td><img src={item.Photo.url} alt="immagine" /></td>
+       </tr>);
+    });
 
         if (this.state.isLoading) {
             return (
@@ -100,7 +103,6 @@ class App extends Component {
                     </header>
                 </div>
             )
-
         }
 
         return (
@@ -117,10 +119,13 @@ class App extends Component {
 
 
                     <h2>Elenco studenti</h2>
-
+    <table>
                     {
                         studentiLinks
                     }
+
+    </table>
+                    
 
                 </header>
             </div>
