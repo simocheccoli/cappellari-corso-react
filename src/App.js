@@ -76,7 +76,7 @@ class App extends Component {
                                   mail={item.Contacts.mail}
                                   experiences={item.Experience}
                                   education={item.Education}
-                                  //description={item.Bio.description}
+                                  bio={item.Bio}
                                   descriptionR={item.Reference.descriptionR}
                                   skills={item.Skills}
                                   software={item.Software}

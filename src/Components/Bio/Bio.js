@@ -4,14 +4,13 @@ import React, {Component} from 'react';
 class Bio extends Component {
     render (){
 
-        const description = this.props.description;
-
+        const bio = this.props.bio;
 
         return (
         <div>
             <h2>Biografia</h2>
-            <p>{description}</p>
-        </div>
+            <p>{bio.description}</p>
+            </div>
         );
     }
 }
