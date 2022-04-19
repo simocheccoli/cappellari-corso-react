@@ -31,7 +31,7 @@ class Student extends Component {
         return (
             <div id="main">
             <div id="colonnaSx">
-                <Photo url={url} className="photo"/>
+                <Photo url={url}/>
                 <Contacts />
                 <Bio bio={bio}/>
                 <Skills skills={skills} />
