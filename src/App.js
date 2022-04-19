@@ -89,10 +89,12 @@ class App extends Component {
         });
 
         const studentiLinks = this.state.studenti && this.state.studenti.length && this.state.studenti.map((item, index) => {
-        return (<tr key={index}>
+        return (<tbody key={index}>
+            <tr>
                 <td><Link to={item.User.name}>{item.User.name}</Link></td>
                 <td><img src={item.Photo.url} alt="immagine" /></td>
-       </tr>);
+                </tr>
+       </tbody>);
     });
 
         if (this.state.isLoading) {

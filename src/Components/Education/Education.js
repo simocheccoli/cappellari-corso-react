@@ -10,7 +10,7 @@ class Education extends Component {
         console.log(this.props.education);
         
       const educationList = education.map((item, index) =>{
-           return( <li>
+           return( <li key={index}>
                 <span>{item.dateFrom}/{item.dateTo}</span>
                 <p>{item.institute}</p>
                 <p>{item.title}</p>
