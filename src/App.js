@@ -30,7 +30,7 @@ const firebaseConfig = {
 const firebase = initializeApp(firebaseConfig);
 const storage = getStorage(firebase);
 
-const studenti = ref(storage, 'elencoStudenti.json');
+const studentiref = ref(storage, 'elencoStudenti.json');
 
 /*const studenti = axios.create({
     baseURL:'https://firebasestorage.googleapis.com/v0/b/corso-cappellari-react.appspot.com/o/elencoStudenti.json'
@@ -38,12 +38,12 @@ const studenti = ref(storage, 'elencoStudenti.json');
 
 
 
-/*const studenti = axios.get(`https://firebasestorage.googleapis.com/v0/b/corso-cappellari-react.appspot.com/o/elencoStudenti.json`)
+const studenti = axios.get(`https://raw.githubusercontent.com/simocheccoli/cappellari-corso-react/main/src/elencoStudenti.json`)
             .then(response => console.log(response.data))
             .catch(error => {
                 console.error('There was an error!', error);
             });
-*/
+
 
 function App() {
     
