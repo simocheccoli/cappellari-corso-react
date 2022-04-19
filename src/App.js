@@ -1,9 +1,61 @@
 import './App.css';
 import Student from "./Student";
-import studenti from "./elencoStudenti.js"
 import {Routes, Route, Link} from "react-router-dom";
+//import studenti from "./elencoStudenti.json";
+import axios from 'axios';
+import {initializeApp} from "firebase/app";
+import {getStorage, ref } from "firebase/storage";
+
+
+
+// Import the functions you need from the SDKs you need
+//import { initializeApp } from "firebase/app";
+//import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAawEECNqaWOuGSyWPTnyqJVrAv4nG5Y74",
+  authDomain: "corso-cappellari-react.firebaseapp.com",
+  databaseURL: "https://corso-cappellari-react-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "corso-cappellari-react",
+  storageBucket: "corso-cappellari-react.appspot.com",
+  messagingSenderId: "194560797106",
+  appId: "1:194560797106:web:25c76295fc42e157f0dcab",
+  measurementId: "G-5B40RREM4G"
+};
+
+const firebase = initializeApp(firebaseConfig);
+const storage = getStorage(firebase);
+
+const studenti = ref(storage, 'elencoStudenti.json');
+
+/*const studenti = axios.create({
+    baseURL:'https://firebasestorage.googleapis.com/v0/b/corso-cappellari-react.appspot.com/o/elencoStudenti.json'
+})*/
+
+
+
+/*const studenti = axios.get(`https://firebasestorage.googleapis.com/v0/b/corso-cappellari-react.appspot.com/o/elencoStudenti.json`)
+            .then(response => console.log(response.data))
+            .catch(error => {
+                console.error('There was an error!', error);
+            });
+*/
 
 function App() {
+    
+  
+
+        
+    
+    
+   
+                    
+    
+    
 
     const navbar = <div className="container">
         <h1 className="site-heading">Home</h1>
@@ -29,7 +81,7 @@ function App() {
                                                        mail={item.Contacts.mail}
                                                        experiences={item.Experience}
                                                        education={item.Education}
-                                                       description={item.Bio.description}
+                                                       //description={item.Bio.description}
                                                        descriptionR={item.Reference.descriptionR}                                                       
                                                        skills={item.Skills}
                                                        software={item.Software}
