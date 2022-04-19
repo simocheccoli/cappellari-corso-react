@@ -94,10 +94,10 @@
     ],
     "Skills": [
       {
-        "type": "communication"
+        "type": "English"
       },
       {
-        "type": "teamwork"
+        "type": "Spanish"
       }
     ],
     "Software": [
@@ -121,6 +121,15 @@
       },
       {
         "type": "Php"
+      },
+      {
+        "type": "Photoshop"
+      },
+      {
+        "type": "Illustrator"
+      },
+      {
+        "type": "InDesign"
       },
       {
         "type": "Wordpress"
