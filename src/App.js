@@ -71,13 +71,13 @@ class App extends Component {
                                   url={item.Photo.url}
                                   name={item.User.name}
                                   surname={item.User.surname}
-                                  address={item.Contacts.address}
+                                  contacts={item.Contacts}
                                   tel={item.Contacts.tel}
                                   mail={item.Contacts.mail}
                                   experiences={item.Experience}
                                   education={item.Education}
                                   bio={item.Bio}
-                                  descriptionR={item.Reference.descriptionR}
+                                  reference={item.Reference}
                                   skills={item.Skills}
                                   software={item.Software}
                               />

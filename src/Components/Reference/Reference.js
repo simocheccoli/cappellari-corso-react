@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+
 
 class Reference extends Component {
     render (){
 
-        const descriptionR = this.props.descriptionR;
+        const reference = this.props.reference;
+       
 
         return (
         <div>
             <h2>Referenze</h2>
-            <p>{descriptionR}</p>
+            <p>{reference.name} {reference.surname}</p>
+            <p>{reference.number}</p>
+            <p>{reference.email}</p>
             </div>
         );
     }

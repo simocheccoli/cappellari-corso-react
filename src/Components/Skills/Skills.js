@@ -17,7 +17,7 @@ class Skills extends Component {
 
         })
         //interfaccia
-        return (<div><ul>{skillsList}</ul></div>)
+        return (<div><h2>Skills</h2><ul>{skillsList}</ul></div>)
     }
 }
 

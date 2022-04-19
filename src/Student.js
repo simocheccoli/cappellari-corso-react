@@ -20,10 +20,10 @@ class Student extends Component {
         const education = this.props.education;
         const skills = this.props.skills;
         const software = this.props.software;
-
+        const contacts = this.props.contacts;
         console.log(experiences);
         const bio = this.props.bio;
-        const descriptionR= this.props.descriptionR;
+        const reference = this.props.reference;
         const url = this.props.url;
        
 
@@ -32,7 +32,7 @@ class Student extends Component {
             <div id="main">
             <div id="colonnaSx">
                 <Photo url={url}/>
-                <Contacts />
+                <Contacts contacts={contacts}/>
                 <Bio bio={bio}/>
                 <Skills skills={skills} />
                 <Software software={software} />
@@ -44,7 +44,7 @@ class Student extends Component {
 
                 <Education education={education} />
                 <Experiences experiences={experiences} />
-                <Reference descriptionR={descriptionR} />
+                <Reference reference={reference} />
                 </div>
 
                 </div>//chiude main
