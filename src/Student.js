@@ -39,11 +39,11 @@ class Student extends Component {
             </div>
             
             <div id="colonnaDx">
-                <p>Nome: {name}</p>
-                <p>Cognome: {surname}</p>
+                <p class='name'>{name}</p>
+                <p class='surname'>{surname}</p>
 
-                <Education education={education} />
-                <Experiences experiences={experiences} />
+                <Education id="ed" education={education} />
+                <Experiences id="ex" experiences={experiences} />
                 <Reference descriptionR={descriptionR} />
                 </div>
 

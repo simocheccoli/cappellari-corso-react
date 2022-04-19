@@ -2,7 +2,7 @@
     width:1340px;
     margin:auto;
     overflow:hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -22,6 +22,8 @@ img{
     width: 250px;
     height: 300px;
     object-fit: cover;
+    border-radius: 100%;
+    margin-top: 30px;
 }
 
 h2, h3{
@@ -29,6 +31,8 @@ h2, h3{
     font-weight: bold;
     color: #61DAf8;
     text-transform: uppercase;
+    text-align: left;
+    margin-left:40px;
 }
 
 p{
@@ -36,5 +40,37 @@ p{
     font-weight: normal;
     color: white;
     text-transform: capitalize;
+    text-align: left;
+    margin-left: 40px;
 }
 
+.mainEd{   
+    height: 300px;
+    width: 100%;
+}
+
+.dataEd span{
+    float: left;
+    display: block;
+    width:40%;
+}
+.testoEd{
+    float: right;
+    display: block;
+    width: 60%;
+}
+
+.mainEx{
+    height: 300px;
+    width: 100%;
+}
+
+.dataEx{
+    float: left;
+    width: 40%;
+}
+
+.testoEx{
+    float: right;
+    width: 60%;
+}
