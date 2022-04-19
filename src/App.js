@@ -66,7 +66,7 @@ class App extends Component {
                           key={index}
                           path={item.User.name}
                           element={
-                              <Student
+                              <Student 
                                   key={index}
                                   url={item.Photo.url}
                                   name={item.User.name}
