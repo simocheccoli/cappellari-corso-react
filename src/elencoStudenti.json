@@ -76,7 +76,7 @@
     "Photo": {
     },
     "About": {
-      "description": ""
+      "description": "Organizzatore di serate e grafico amatoriale per passione, approfitto del cambio radicale di vita e dello scenario professionale causati dlla pandemia e decido di dedicarmi a ciò che mi stimola maggiormente e torno a studiare tantissimo."
     },
     "Education": [
       {
@@ -88,16 +88,99 @@
     ],
     "Skills": [
       {
-        "type": "communication"
+        "type": "Lavoro in team"
       },
       {
-        "type": "teamwork"
-      }
+        "type": "Abilità comunicative"
+      },
+      {"type": "Motivazione"},
+      {"type": "Adattabilità e flessibilità"},
+      {"type": "Creatività"},
+      {"type": "Gestione dei conflitti"}
     ],
     "Software": [
       {
-        "type": ""
+        "type": "Photoshop"
+      },
+      {
+        "type": "Illustrator"
+      },
+      {
+        "type": "Indesign"
+      },
+      {
+        "type": "Coding / CSS / HTML - Wordpress / CMS"
       }
+
+    ],
+    "Reference": [
+      {
+        "name": "",
+        "surname": "",
+        "number": "",
+        "email": ""
+      }
+    ],
+    "Experience": [
+      {
+        "dateFrom": "2020",
+        "dateTo": "2022",
+        "job": "FrontEnd Developer",
+        "company": "Google",
+        "description": "FrontEnd software Engineer in collaboration with BackEnd Team."
+      }
+    ]
+  },
+  {
+    "Contacts": {
+      "address": "via Colagrande, 15",
+      "tel": "347 9300734",
+      "mail": "sam80@libero.it"
+    },
+    "User": {
+      "name": "Michele",
+      "surname": "Castellazzi",
+      "job": "FrontEnd Developer"
+    },
+    "Photo": {
+    },
+    "About": {
+      "description": ""
+    },
+    "Education": [
+      {
+        "dateFrom": "1995",
+        "dateTo": "1999",
+        "institute": "Liceo Ariosto",
+        "title": "Maturità scientifica"
+      }
+    ],
+    "Skills": [
+      {
+        "type": "Lavoro in team"
+      },
+      {
+        "type": "Abilità comunicative"
+      },
+      {"type": "Motivazione"},
+      {"type": "Adattabilità e flessibilità"},
+      {"type": "Creatività"},
+      {"type": "Gestione dei conflitti"}
+    ],
+    "Software": [
+      {
+        "type": "Photoshop"
+      },
+      {
+        "type": "Illustrator"
+      },
+      {
+        "type": "Indesign"
+      },
+      {
+        "type": "Coding / CSS / HTML - Wordpress / CMS"
+      }
+
     ],
     "Reference": [
       {
