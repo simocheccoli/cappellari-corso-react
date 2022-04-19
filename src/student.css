@@ -2,6 +2,7 @@
     width:1340px;
     margin:auto;
     overflow:hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -20,6 +21,7 @@
 img{
     width: 250px;
     height: 300px;
+    object-fit: cover;
 }
 
 h2, h3{
@@ -27,5 +29,12 @@ h2, h3{
     font-weight: bold;
     color: #61DAf8;
     text-transform: uppercase;
+}
+
+p{
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    text-transform: capitalize;
 }
 
