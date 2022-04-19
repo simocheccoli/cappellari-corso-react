@@ -18,7 +18,7 @@ class Education extends Component {
 
         })
         //interfaccia
-        return (<div><ul>{educationList}</ul></div>)
+        return (<div><h2>ISTRUZIONE</h2><ul>{educationList}</ul></div>)
     }
 }
 

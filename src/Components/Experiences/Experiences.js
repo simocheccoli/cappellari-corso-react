@@ -19,7 +19,7 @@ class Experiences extends Component {
 
         })
         //interfaccia
-        return (<div><ul>{experiencesList}</ul></div>)
+        return (<div><h2>ESPERIENZE LAVORATIVE</h2><ul>{experiencesList}</ul></div>)
     }
 }
 
