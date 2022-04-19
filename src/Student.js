@@ -22,10 +22,10 @@ class Student extends Component {
         const software = this.props.software;
 
         console.log(experiences);
-        const description= this.props.description;
+        const bio = this.props.bio;
         const descriptionR= this.props.descriptionR;
         const url = this.props.url;
-        
+       
 
         //interfaccia
         return (
@@ -33,7 +33,7 @@ class Student extends Component {
             <div id="colonnaSx">
                 <Photo url={url}/>
                 <Contacts />
-                <Bio description={description} />
+                <Bio bio={bio}/>
                 <Skills skills={skills} />
                 <Software software={software} />
             </div>
