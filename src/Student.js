@@ -7,6 +7,7 @@ import Skills from './Components/Skills/Skills';
 import Software from './Components/Software/Software';
 import Contacts from './Contacts/Contacts';
 import Photo from './Components/Photo/Photo.js';
+import './student.css';
 
 
 class Student extends Component {
@@ -28,18 +29,25 @@ class Student extends Component {
 
         //interfaccia
         return (
-            <div>
-                <Photo url={url}/>
-                <p>Nome : {name}</p>
-                <p>Cognome : {surname}</p>
+            <div id="main">
+            <div id="colonnaSx">
+                <Photo url={url} />
                 <Contacts />
-                <Experiences experiences={experiences}/>
-                <Education education={education}/>
-                <Bio description = {description}/>
-                <Reference descriptionR = {descriptionR}/>
-                <Skills skills={skills}/>
-                <Software software={software}/>
+                <Bio description={description} />
+                <Skills skills={skills} />
+                <Software software={software} />
             </div>
+            
+            <div id="colonnaDx">
+                <p>Nome: {name}</p>
+                <p>Cognome: {surname}</p>
+
+                <Education education={education} />
+                <Experiences experiences={experiences} />
+                <Reference descriptionR={descriptionR} />
+                </div>
+
+                </div>//chiude main
         )
     }
 }
