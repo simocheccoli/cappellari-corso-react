@@ -12,7 +12,7 @@
     },
     "Photo": {
     },
-    "About": {
+    "Bio": {
       "description": ""
     },
     "Education": [
@@ -64,26 +64,32 @@
   },
   {
     "Contacts": {
-      "address": "via xxx",
-      "tel": "0000000000",
-      "mail": "info@info.it"
+      "address": "via Bonafini 3",
+      "tel": "3459272862",
+      "mail": "irene.dangelo204@gmail.com"
     },
     "User": {
       "name": "Irene",
       "surname": "D'Angelo",
-      "job": "dev"
+      "job": "Student"
     },
     "Photo": {
     },
-    "About": {
-      "description": ""
+    "Bio": {
+      "description": "Sorriso, spigliatezza e predisposizione ai rapporti umani. Capacità comunicative e interazionali in lingua straniera favorite dalle esperienze all'estero. Ottime competenze organizzative nel lavoro e negli spazi comuni. Predisposizione al lavoro in team. Attualmente frequento il corso di Frontend Developer e Graphic Designer presso Istituto Cappellari. Già prima di conseguire la Laurea ho capito che era la sttrada che volevo prendere. Da questo spiraglio di lucee dalle esperienze vissute durante il mio lavoro che mi hanno permesso di viaggiare molto (seppur in un altro ambito), sono maturata dal punto di vista personale e ho avuto una grossa crescita che mi ha portato a definire l'attuale profilo professionale che desidero"
     },
     "Education": [
       {
-        "dateFrom": "2016",
-        "dateTo": "2020",
-        "institute": "Istituto Einaudi",
-        "title": "Tecnico Informatico"
+        "dateFrom": "2021",
+        "dateTo": "2022",
+        "institute": "Istituto Cappellari",
+        "title": "Frontend Developer e Graphic Designer"
+      },
+      {
+        "dateFrom": "2015",
+        "dateTo": "2021",
+        "institute": "Alma Mater Studiorium di Bologna Scienze della Comunicazione",
+        "title": "Laurea triennale"
       }
     ],
     "Skills": [
@@ -96,7 +102,28 @@
     ],
     "Software": [
       {
-        "type": ""
+        "type": "Html"
+      },
+      {
+        "type": "Css"
+      },
+      {
+        "type": "Npm"
+      },
+      {
+        "type": "Github"
+      },
+      {
+        "type": "Javascript"
+      },
+      {
+        "type": "React"
+      },
+      {
+        "type": "Php"
+      },
+      {
+        "type": "Wordpress"
       }
     ],
     "Reference": [
@@ -109,11 +136,11 @@
     ],
     "Experience": [
       {
-        "dateFrom": "2020",
-        "dateTo": "2022",
-        "job": "FrontEnd Developer",
-        "company": "Google",
-        "description": "FrontEnd software Engineer in collaboration with BackEnd Team."
+        "dateFrom": "2015",
+        "dateTo": "2021",
+        "job": "Fiere e mercati stagionali a rotazione nei seguenti paesi: Italia, Danimarca, Finlandia e Inghilterra",
+        "company": "Mercato europeo",
+        "description": "Gestione autonoma e/o in team dello stand, del montaggio e dello smontaggio. Spostamenti autonomi con i furgoni e gestione della merce."
       }
     ]
   }
