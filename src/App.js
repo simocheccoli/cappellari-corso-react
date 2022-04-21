@@ -45,6 +45,7 @@ class App extends Component {
                         })
                     });
             })
+
             .catch((error) => {
                 // Handle any errors
             });

@@ -1,6 +1,6 @@
 //uso di librerie esterne
 import React, {Component} from 'react';
-
+import icona from '../icons/skill.svg';
 
 //definizione del componente
 class Skills extends Component {
@@ -17,7 +17,10 @@ class Skills extends Component {
 
         })
         //interfaccia
-        return (<div><h2>Skills</h2><ul>{skillsList}</ul></div>)
+        return (<div><div className='titleContainer'>
+        <img className='Icon' src={icona}/>
+        <h2>SKILLS</h2>
+        </div><ul>{skillsList}</ul></div>)
     }
 }
 

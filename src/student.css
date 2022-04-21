@@ -1,3 +1,6 @@
+
+
+
 #main{
     width:1340px;
     margin:auto;
@@ -35,6 +38,7 @@
     font-size: 40px;
     font-weight: 500;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 img{
@@ -60,6 +64,7 @@ h2, h3{
     font-weight: bold;
     color: #61DAf8;
     text-transform: uppercase;
+    display: inline;
 }
 
 p{
@@ -67,6 +72,10 @@ p{
     font-weight: normal;
     color: white;
     text-transform: capitalize;
+}
+
+ul{
+    display: block;
 }
 
 li{
@@ -96,6 +105,12 @@ li{
     font-size: 22px;
 }
 
+.chartPreContainer{
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+}
+
 .chartContainer{
     width: 150px;
     display: inline-block;
@@ -111,4 +126,17 @@ li{
 
 .chartTitle{
     margin: 1px;
+}
+.titleContainer{
+    width: 100%;
+    font-size: 0;
+   
+
+}
+
+.Icon{
+    width: 35px;
+    height: 35px;
+    display:inline;
+    margin: 0;
 }

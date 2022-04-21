@@ -1,6 +1,6 @@
 //uso di librerie esterne
 import React, {Component} from 'react';
-
+import icona from '../icons/esperienze.svg';
 
 //definizione del componente
 class Experiences extends Component {
@@ -19,7 +19,10 @@ class Experiences extends Component {
 
         })
         //interfaccia
-        return (<div><h2>ESPERIENZE LAVORATIVE</h2><ul>{experiencesList}</ul></div>)
+        return (<div><div className='titleContainer'>
+        <img className='Icon' src={icona}/>
+        <h2>ESPERIENZE LAVORATIVE</h2>
+        </div><ul>{experiencesList}</ul></div>)
     }
 }
 

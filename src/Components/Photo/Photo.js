@@ -4,7 +4,7 @@ class Photo extends Component {
     render(){
 
         const url = this.props.url;
-        console.log(url);
+        console.log("URL" , url);
 
         return(
            <div>

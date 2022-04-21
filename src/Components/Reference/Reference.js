@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import icona from '../icons/referenze.svg';
 
 class Reference extends Component {
     render (){
@@ -11,7 +11,7 @@ class Reference extends Component {
 
             if(item.name === "" && item.surname === "" && item.number === "" && item.email === ""){
                 console.log("vuota");
-                return (<div><li key={index}><p>nessuna referenza</p></li></div>);
+                return (<li key={index}><p>nessuna referenza</p></li>);
             }else{
 
             return( <li key={index}>
@@ -23,12 +23,9 @@ class Reference extends Component {
 
          })
          
-            return (
-                <div>
-                    <h2>Referenze</h2>
-                    {referenceList}
-                </div>
-                   );
+            return (<div>
+                <div className='titleContainer'><img className='Icon' src={icona}/><h2>REFERENZE</h2></div>
+            <ul>{referenceList}</ul></div>);
             
 
         

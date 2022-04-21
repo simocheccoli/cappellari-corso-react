@@ -1,6 +1,6 @@
 //uso di librerie esterne
 import React, {Component} from 'react';
-
+import icona from '../icons/studi.svg';
 
 //definizione del componente
 class Education extends Component {
@@ -18,7 +18,10 @@ class Education extends Component {
 
         })
         //interfaccia
-        return (<div><h2>STUDI</h2><ul>{educationList}</ul></div>)
+        return (<div><div className='titleContainer'>
+        <img className='Icon' src={icona}/>
+        <h2>STUDI</h2>
+        </div><ul>{educationList}</ul></div>)
     }
 }
 

@@ -18,7 +18,7 @@ class Chart extends Component {
      })
 
         //interfaccia
-        return (<div><h2>SOFTWARE CHARTS</h2>{chartList}</div>)
+        return (<div className='chartPreContainer'><h2>SOFTWARE CHARTS</h2><ul>{chartList}</ul></div>)
     }
 }
 

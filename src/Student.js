@@ -11,6 +11,7 @@ import './student.css';
 import Chart from './Components/Chart/Chart';
 
 
+
 class Student extends Component {
     render() {
 
@@ -28,6 +29,7 @@ class Student extends Component {
         const url = this.props.url;
         const job = this.props.job;
        
+       
 
         //interfaccia
         return (
@@ -37,7 +39,7 @@ class Student extends Component {
                 <Contacts contacts={contacts}/>
                 <Bio bio={bio}/>
                 <Skills skills={skills} />
-                <Software software={software} />
+                <Software software={software}/>
             </div>
             
             <div id="colonnaDx">
