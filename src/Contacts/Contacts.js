@@ -4,18 +4,16 @@ import data from '../Data/data.json'
 class Contacts extends Component{
 
 render(){
-    const address = data.Contacts.address;
-    const tel = data.Contacts.tel;
-    const mail = data.Contacts.mail;
+    const contacts = this.props.contacts
     console.log(data.Contacts.address);
 
 
 return (
     <div>
         <h3>Contatti</h3>
-        <p>{address}</p>
-        <p>{tel}</p>
-        <p>{mail}</p>
+        <p>{contacts.address}</p>
+        <p>{contacts.tel}</p>
+        <p>{contacts.mail}</p>
     </div>
 )
 }

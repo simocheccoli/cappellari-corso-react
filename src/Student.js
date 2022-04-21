@@ -7,6 +7,8 @@ import Skills from './Components/Skills/Skills';
 import Software from './Components/Software/Software';
 import Contacts from './Contacts/Contacts';
 import Photo from './Components/Photo/Photo.js';
+import './student.css';
+import Chart from './Components/Chart/Chart';
 
 
 class Student extends Component {
@@ -19,27 +21,37 @@ class Student extends Component {
         const education = this.props.education;
         const skills = this.props.skills;
         const software = this.props.software;
-
+        const contacts = this.props.contacts;
         console.log(experiences);
-        const description= this.props.description;
-        const descriptionR= this.props.descriptionR;
+        const bio = this.props.bio;
+        const reference = this.props.reference;
         const url = this.props.url;
-        
+        const job = this.props.job;
+       
 
         //interfaccia
         return (
-            <div>
+            <div id="main">
+            <div id="colonnaSx">
                 <Photo url={url}/>
-                <p>Nome : {name}</p>
-                <p>Cognome : {surname}</p>
-                <Contacts />
-                <Experiences experiences={experiences}/>
-                <Education education={education}/>
-                <Bio description = {description}/>
-                <Reference descriptionR = {descriptionR}/>
-                <Skills skills={skills}/>
-                <Software software={software}/>
+                <Contacts contacts={contacts}/>
+                <Bio bio={bio}/>
+                <Skills skills={skills} />
+                <Software software={software} />
             </div>
+            
+            <div id="colonnaDx">
+                <p className='nome'>{name}</p>
+                <p className='nome'>{surname}</p>
+                <p className='job'>{job}</p>
+
+                <Education education={education} />
+                <Experiences experiences={experiences} />
+                <Reference reference={reference} />
+                <Chart software={software}/>
+                </div>
+
+                </div>//chiude main
         )
     }
 }

@@ -6,6 +6,7 @@ import {initializeApp} from "firebase/app";
 import {getStorage, ref, getDownloadURL} from "firebase/storage";
 import axios from "axios";
 import ReactLoading from 'react-loading';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -69,15 +70,16 @@ class App extends Component {
                               <Student 
                                   key={index}
                                   url={item.Photo.url}
+                                  job={item.User.job}
                                   name={item.User.name}
                                   surname={item.User.surname}
-                                  address={item.Contacts.address}
+                                  contacts={item.Contacts}
                                   tel={item.Contacts.tel}
                                   mail={item.Contacts.mail}
                                   experiences={item.Experience}
                                   education={item.Education}
-                                  //description={item.Bio.description}
-                                  descriptionR={item.Reference.descriptionR}
+                                  bio={item.Bio}
+                                  reference={item.Reference}
                                   skills={item.Skills}
                                   software={item.Software}
                               />
@@ -89,10 +91,26 @@ class App extends Component {
         });
 
         const studentiLinks = this.state.studenti && this.state.studenti.length && this.state.studenti.map((item, index) => {
-        return (<tr key={index}>
-                <td><Link to={item.User.name}>{item.User.name}</Link></td>
-                <td><img src={item.Photo.url} alt="immagine" /></td>
-       </tr>);
+
+        if(index % 2 === 0){
+            return (<tbody key={index}>
+                <tr>
+                    <td><AnchorLink href='#main'><Link to={item.User.name}>{item.User.name} {item.User.surname}</Link></AnchorLink></td>
+                    <td><img src={item.Photo.url} alt="immagine" /></td>
+                    </tr>
+           </tbody>);
+      
+        }
+        else{
+            return (<tbody key={index}>
+                <tr>
+                <td>
+                    <img src={item.Photo.url} alt="immagine" /></td>
+                    <td><AnchorLink href='#main'><Link to={item.User.name}>{item.User.name} {item.User.surname}</Link></AnchorLink></td>
+                    </tr>
+           </tbody>
+           );
+        }
     });
 
         if (this.state.isLoading) {
@@ -109,7 +127,7 @@ class App extends Component {
             <div className="App">
                 <header className="App-header">
 
-                    {navbar}
+                    
 
                     <Routes>
                         {
@@ -117,6 +135,7 @@ class App extends Component {
                         }
                     </Routes>
 
+                    {navbar}
 
                     <h2>Elenco studenti</h2>
     <table>

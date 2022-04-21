@@ -10,7 +10,7 @@ class Experiences extends Component {
         console.log(this.props.experiences);
         
       const experiencesList = experiences.map((item, index) =>{
-           return( <li key={index}>
+           return( <li className='listElement' key={index}>
                 <span>{item.dateFrom}/{item.dateTo}</span>
                 <p>{item.job}</p>
                 <p>{item.company}</p>
@@ -19,7 +19,7 @@ class Experiences extends Component {
 
         })
         //interfaccia
-        return (<div><ul>{experiencesList}</ul></div>)
+        return (<div><h2>ESPERIENZE LAVORATIVE</h2><ul>{experiencesList}</ul></div>)
     }
 }
 

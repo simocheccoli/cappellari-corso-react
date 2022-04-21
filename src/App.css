@@ -28,6 +28,51 @@
   color: #61dafb;
 }
 
+table{
+  border: none;
+  width: 100%;
+}
+
+td{
+  text-transform: uppercase;
+  border: none;
+}
+
+td a:visited, td a:link{
+  color: #61dafb;
+  text-decoration: none;
+}
+td a:hover{
+  color: #4675bd;
+}
+
+td img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0;
+
+}
+tr{
+  border: none;
+}
+tbody{
+  height: 155px;
+}
+
+tbody:nth-child(even){
+  background-color: #282c34;
+  
+}
+tbody:nth-child(odd) {
+  background-color:#33373f;
+  
+}
+
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

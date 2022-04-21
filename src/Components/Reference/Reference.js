@@ -1,17 +1,37 @@
 import React, {Component} from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+
 
 class Reference extends Component {
     render (){
 
-        const descriptionR = this.props.descriptionR;
+        const reference = this.props.reference;
+        console.log(this.props.reference);
 
-        return (
-        <div>
-            <h2>Referenze</h2>
-            <p>{descriptionR}</p>
-            </div>
-        );
+        const referenceList = reference.map((item, index) =>{
+
+            if(item.name === "" && item.surname === "" && item.number === "" && item.email === ""){
+                console.log("vuota");
+                return (<div><li key={index}><p>nessuna referenza</p></li></div>);
+            }else{
+
+            return( <li key={index}>
+                 <p>{item.name} {item.surname}</p>
+                 <p>{item.number}</p>
+                 <p>{item.email}</p>
+                 </li>);
+            }
+
+         })
+         
+            return (
+                <div>
+                    <h2>Referenze</h2>
+                    {referenceList}
+                </div>
+                   );
+            
+
+        
     }
 }
 
