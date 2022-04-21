@@ -8,8 +8,8 @@ class Photo extends Component {
 
         return(
            <div>
-               <h2>Photo</h2>
-               <img className="photo" src={url} alt="immagine" />
+               <span className='fillPhoto'></span>
+               <img className="photo" src={url} alt="immagine"/>
            </div>
         );
     }

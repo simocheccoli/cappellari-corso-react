@@ -25,6 +25,7 @@ class Student extends Component {
         const bio = this.props.bio;
         const reference = this.props.reference;
         const url = this.props.url;
+        const job = this.props.job;
        
 
         //interfaccia
@@ -39,8 +40,9 @@ class Student extends Component {
             </div>
             
             <div id="colonnaDx">
-                <p>Nome: {name}</p>
-                <p>Cognome: {surname}</p>
+                <p className='nome'>{name}</p>
+                <p className='nome'>{surname}</p>
+                <p className='job'>{job}</p>
 
                 <Education education={education} />
                 <Experiences experiences={experiences} />
