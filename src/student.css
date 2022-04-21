@@ -95,3 +95,20 @@ li{
     font-weight:800;
     font-size: 22px;
 }
+
+.chartContainer{
+    width: 150px;
+    display: inline-block;
+
+}
+
+.chartImage{
+    display: inline-block;
+    width: 145px;
+    height: 145px;
+    margin: 1px;
+}
+
+.chartTitle{
+    margin: 1px;
+}

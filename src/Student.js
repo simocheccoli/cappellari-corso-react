@@ -8,6 +8,7 @@ import Software from './Components/Software/Software';
 import Contacts from './Contacts/Contacts';
 import Photo from './Components/Photo/Photo.js';
 import './student.css';
+import Chart from './Components/Chart/Chart';
 
 
 class Student extends Component {
@@ -47,6 +48,7 @@ class Student extends Component {
                 <Education education={education} />
                 <Experiences experiences={experiences} />
                 <Reference reference={reference} />
+                <Chart software={software}/>
                 </div>
 
                 </div>//chiude main
